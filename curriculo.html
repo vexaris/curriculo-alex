@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de Alex Bruno Da Silva Barros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        h2 {
+            color: #555;
+        }
+        .container {
+            width: 90%; /* Aumentando a largura para dispositivos móveis */
+            max-width: 800px; /* Limite máximo de largura */
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .section {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em; /* Aumentando o tamanho da fonte */
+        }
+        button {
+            padding: 10px 20px;
+            background: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em; /* Aumentando o tamanho da fonte */
+        }
+        button:hover {
+            background: #218838;
+        }
+        .confirmation {
+            display: none; /* Oculto por padrão */
+            padding: 10px;
+            margin-top: 10px;
+            color: #155724;
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Alex Bruno Da Silva Barros</h1>
+    <p>Email: barrosagency@hotmail.com | Telefone: (92) 99180-9642</p>
+    <p>Manaus, AM</p>
+</header>
+
+<div class="container">
+    <div class="section">
+        <h2>Sobre Mim</h2>
+        <p>Profissional dinâmico e proativo com mais de 10 anos de experiência em Tecnologia da Informação, especializado em manutenção de computadores, administração de bancos de dados e suporte técnico. Atualmente, estou cursando Gestão da Tecnologia da Informação na Universidade UNICV.</p>
+    </div>
+
+    <div class="section">
+        <h2>Experiência</h2>
+        <ul>
+            <li>Analista de Suporte em Informática na Paiva Advogados Associados (junho de 2023 - maio de 2024)</li>
+            <li>Analista de Suporte em Informática Freelancer (2010 - Presente)</li>
+            <li>Técnico em Informática na Face North Informática (2011 - 2012)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Formação Acadêmica</h2>
+        <ul>
+            <li>Gestão da Tecnologia da Informação - Universidade UNICV (2021 - Presente)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Cursos em Andamento</h2>
+        <ul>
+            <li>SQL-Server, Azure SQL Database, Linguagem SQL e Modelagem de Dados, do DBA – Udemy (84 horas)</li>
+            <li>MySQL Completo – Formação DBA (123 horas)</li>
+            <li>SQL Server Completo – Formação DBA (83 horas)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Habilidades</h2>
+        <p>Técnicas: Manutenção de Computadores, Programação VBA, Administração de Bancos de Dados (FireBird, SQL, MySQL, PostgreSQL), Administração de Sistemas ERP, Redes, Automação de Processos, Segurança da Informação, Análise de Dados e Relatórios, Suporte Técnico, Solução de Problemas, Gestão de Projetos de TI, e Implementação de Sistemas.</p>
+        <p>Soft Skills: Comunicação Eficaz, Colaboração em Equipe, Resolução de Problemas, Aprendizado Ágil, Adaptabilidade e Trabalho sob Pressão.</p>
+    </div>
+
+    <div class="section">
+        <h2>Certificações</h2>
+        <ul>
+            <li>Curso: SQL-Server, Azure SQL Database, Linguagem SQL e Modelagem de Dados, do DBA – Udemy</li>
+            <li>CNH: Categoria AB</li>
+        </ul>
+    </div>
+
+    <div class="form-container">
+        <h2>Contato</h2>
+        <form onsubmit="handleSubmit(event)">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="3" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="confirmation" id="confirmationMessage">
+            Obrigado pela sua mensagem! Em breve entrarei em contato.
+        </div>
+    </div>
+</div>
+
+<script>
+    function handleSubmit(event) {
+        event.preventDefault(); // Impede o envio do formulário padrão
+        document.getElementById('confirmationMessage').style.display = 'block'; // Mostra a mensagem de confirmação
+        // Aqui você pode adicionar código para enviar a mensagem por email se necessário
+        // Ex: enviar os dados para um servidor
+    }
+</script>
+
+</body>
+</html>
